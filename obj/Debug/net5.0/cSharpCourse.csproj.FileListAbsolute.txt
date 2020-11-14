@@ -1,0 +1,15 @@
+/Users/noelmendoza/Documents/Noel Mendoza/Coding/Courses/cSharpCourse/bin/Debug/net5.0/cSharpCourse.deps.json
+/Users/noelmendoza/Documents/Noel Mendoza/Coding/Courses/cSharpCourse/bin/Debug/net5.0/cSharpCourse.runtimeconfig.json
+/Users/noelmendoza/Documents/Noel Mendoza/Coding/Courses/cSharpCourse/bin/Debug/net5.0/cSharpCourse.runtimeconfig.dev.json
+/Users/noelmendoza/Documents/Noel Mendoza/Coding/Courses/cSharpCourse/bin/Debug/net5.0/cSharpCourse.dll
+/Users/noelmendoza/Documents/Noel Mendoza/Coding/Courses/cSharpCourse/bin/Debug/net5.0/ref/cSharpCourse.dll
+/Users/noelmendoza/Documents/Noel Mendoza/Coding/Courses/cSharpCourse/bin/Debug/net5.0/cSharpCourse.pdb
+/Users/noelmendoza/Documents/Noel Mendoza/Coding/Courses/cSharpCourse/obj/Debug/net5.0/cSharpCourse.csprojAssemblyReference.cache
+/Users/noelmendoza/Documents/Noel Mendoza/Coding/Courses/cSharpCourse/obj/Debug/net5.0/cSharpCourse.GeneratedMSBuildEditorConfig.editorconfig
+/Users/noelmendoza/Documents/Noel Mendoza/Coding/Courses/cSharpCourse/obj/Debug/net5.0/cSharpCourse.AssemblyInfoInputs.cache
+/Users/noelmendoza/Documents/Noel Mendoza/Coding/Courses/cSharpCourse/obj/Debug/net5.0/cSharpCourse.AssemblyInfo.cs
+/Users/noelmendoza/Documents/Noel Mendoza/Coding/Courses/cSharpCourse/obj/Debug/net5.0/cSharpCourse.csproj.CoreCompileInputs.cache
+/Users/noelmendoza/Documents/Noel Mendoza/Coding/Courses/cSharpCourse/obj/Debug/net5.0/cSharpCourse.dll
+/Users/noelmendoza/Documents/Noel Mendoza/Coding/Courses/cSharpCourse/obj/Debug/net5.0/ref/cSharpCourse.dll
+/Users/noelmendoza/Documents/Noel Mendoza/Coding/Courses/cSharpCourse/obj/Debug/net5.0/cSharpCourse.pdb
+/Users/noelmendoza/Documents/Noel Mendoza/Coding/Courses/cSharpCourse/obj/Debug/net5.0/cSharpCourse.genruntimeconfig.cache
