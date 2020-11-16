@@ -5,10 +5,13 @@ namespace classes
 {
   public class BankAccount
   {
+    // variables we are using in class 
+    // create list, by creating new instance of transactions
     private List<Transaction> allTransactions = new List<Transaction>();
     private static int accountNumberSeed = 1234567890;
     public string Number { get; }
     public string Owner { get; set; }
+    // get here becomes a function to update balance on each call 
     public decimal Balance 
     { 
       get 
@@ -21,9 +24,10 @@ namespace classes
         return balance;
       }
     }
-    
+    // constructor - same name as class
     public BankAccount(string name, decimal initialBalance) 
     {
+      // properties of constructor
       this.Number = accountNumberSeed.ToString();
       accountNumberSeed++;
 
@@ -67,14 +71,14 @@ namespace classes
       var report = new System.Text.StringBuilder();
 
       decimal balance = 0;
-      // inserts tab between characters
+      // inserts tab between characters HEADER
       report.AppendLine("Date\t\tAmount\tBalance\tNote");
       // loop through transactions list
       foreach(var num in allTransactions)
       {
         // increment count
         balance += num.Amount;
-        // add line to report
+        // add line to report ROWS
         report.AppendLine($"{num.Date.ToShortDateString()}\t{num.Amount}\t{balance}\t{num.Notes}");
       }
       // return report, convert to string
