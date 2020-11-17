@@ -4,7 +4,8 @@ using System.Collections.Generic;
 namespace classes
 {
   public class BankAccount
-  {
+  { // polymorphism: virtual method that derived class may implement method differently 
+    public virtual void PerformMonthEndTransactions() { }
     // variables we are using in class 
     // create list, by creating new instance of transactions
     private List<Transaction> allTransactions = new List<Transaction>();
