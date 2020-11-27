@@ -4,6 +4,14 @@ using System.Collections.Generic;
 
 namespace exercises1
 {
+
+    public enum Season
+    {
+        Spring = 10,
+        Summer = 20,
+        Winter = 30,
+        Autumn = 40
+    }
     class Program
     {   
         static void Variables() 
@@ -149,12 +157,48 @@ namespace exercises1
 
             // Console.WriteLine(char.ToUpper(drive));
 
-            string messageSplit = "HelloWorld How are you?";
+            string messageSplit = "Hello World How are you?";
 
             messageSplit.Split(" ");
 
-            Console.WriteLine(messageSplit);
+            // Console.WriteLine(messageSplit);
 
+           // Console.WriteLine("Just testing token here: {0}", messageSplit);
+
+            double d = 23.123;
+
+            //Console.WriteLine(Math.Round(d, 2));
+
+            bool a = true;
+
+            int b = 5;
+
+            char c = 'c';
+
+            string a1 = a.ToString();
+
+            string b1 = b.ToString();
+
+            string c1 = c.ToString();
+
+            string d1 = d.ToString();
+
+            //Console.WriteLine($"These are now strings: {a1}, {b1}, {c1}, {d1}");
+
+            bool e = bool.Parse(a1);
+
+            int h = int.Parse(b1);
+
+            double g = double.Parse(d1);
+
+            char f = char.Parse(c1);
+
+            //Console.WriteLine($"Used Parse methods to initialize: {e}, {h}, {g}, {f}");
+
+            // ENUM
+            Season enumTest = (Season)20;
+
+            Console.WriteLine($" Season: {enumTest}, value: {(int)enumTest}");
         }
 
         /// <summary>
