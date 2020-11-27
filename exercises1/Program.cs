@@ -12,6 +12,17 @@ namespace exercises1
         Winter = 30,
         Autumn = 40
     }
+
+    public struct Person
+    {
+        public string Name;
+        public int Age;
+        public Person(string name, int age)
+        {
+            Name = name;
+            Age = age;
+        }
+    }
     class Program
     {   
         static void Variables() 
@@ -198,7 +209,17 @@ namespace exercises1
             // ENUM
             Season enumTest = (Season)20;
 
-            Console.WriteLine($" Season: {enumTest}, value: {(int)enumTest}");
+            // Console.WriteLine($" Season: {enumTest}, value: {(int)enumTest}");
+
+            var p1 = new Person("Noel Menodza", 30);
+            var p2 = new Person("Joe Smith", 50);
+
+            // p1.Name = p2.Name;
+            // p1.Age = p2.Age;
+
+            Console.WriteLine("{0}, {1}", p1.Name, p1.Age);
+            Console.WriteLine("{0}, {1}", p2.Name, p2.Age);
+            
         }
 
         /// <summary>
