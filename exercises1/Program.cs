@@ -222,6 +222,30 @@ namespace exercises1
             
         }
 
+        static void ConsoleProgram()
+        {
+            string firstName;
+            string middleName;
+            string lastName;
+
+            Console.WriteLine("Enter your First Name: ");
+            firstName = Console.ReadLine();
+
+            Console.WriteLine("Enter your Middle Name: ");
+            middleName = Console.ReadLine();
+
+            Console.WriteLine("Enter your Last Name: ");
+            lastName = Console.ReadLine();
+            
+            // print values entered
+            Console.WriteLine("{0} {1} {2}", firstName, middleName, lastName);
+            
+            Console.WriteLine("Press any key to exit...");
+            // exit on key press
+            Console.ReadKey();
+
+        }
+
         /// <summary>
         /// Just testing out a comment in XML.
         /// </summary>
@@ -230,7 +254,8 @@ namespace exercises1
             //Variables();
             //MinMax();
             //Operators();
-            Strings();
+            //Strings();
+            ConsoleProgram();
         }
     }
 }
