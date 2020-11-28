@@ -5,6 +5,14 @@ using System.Collections.Generic;
 namespace exercises1
 {
 
+    public enum Direction
+    {
+        Up,
+        Down,
+        Left,
+        Right
+    }
+
     public enum Season
     {
         Spring = 10,
@@ -23,8 +31,15 @@ namespace exercises1
             Age = age;
         }
     }
+    
     class Program
     {   
+
+        static void Arguments(int direction, bool option, int num = 0)
+        {
+            
+            
+        }
         static void Variables() 
         {
             // bool ifFalse = true;
@@ -255,7 +270,8 @@ namespace exercises1
             //MinMax();
             //Operators();
             //Strings();
-            ConsoleProgram();
+            //ConsoleProgram();
+            // Arguments((Direction)0, true, 5);
         }
     }
 }
