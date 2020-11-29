@@ -140,19 +140,40 @@ namespace exercises2
                 sum += arr[i];
             }
 
-            Console.WriteLine("[{0}]", string.Join(", ", arr));
-            Console.WriteLine(sum);
+            // Console.WriteLine("[{0}]", string.Join(", ", arr));
+            // Console.WriteLine(sum);
 
             foreach(int item in arr)
             {
-                Console.WriteLine(item);
+                // Console.WriteLine(item);
             }
+
+            int[,] array2D = new int[6, 4];
+
+            string arrayString = "";
+
+            for(int i = 0; i < array2D.GetLength(0); i++)
+            {
+                for(int j = 0; j < array2D.GetLength(1); j++)
+                {
+                    array2D[i, j] = i * j; 
+                    arrayString += string.Format("{0} ", array2D[i, j]);
+                }
+                arrayString += System.Environment.NewLine + System.Environment.NewLine;
+            }
+            Console.WriteLine(arrayString);
+
+            foreach(int index in array2D)
+            {
+                Console.WriteLine(index);
+            }
+
         }
         static void Main(string[] args)
         {
             //Conditionals();
             //Loops();
-            Arrays();
+            //Arrays();
         }
     }
 }
