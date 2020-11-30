@@ -169,11 +169,143 @@ namespace exercises2
             }
 
         }
+        public string Function()
+        {
+            string a = "Hello";
+            string b = "World";
+            string c = "!";
+
+            string result = a + b + c;
+
+            return result;
+        }
+
+        static void UpdateIndex(int[] arr, int index, int value)
+        {
+            arr[index] = value;
+            Console.WriteLine("[{0}]", string.Join(", ", arr));
+        }
+        
+        static void EveryOtherString(string message)
+        {   
+            string[] words = message.Split(' ');
+            string newMessage = "";
+
+            for(int i = 0; i < words.Length; i++)
+            {
+                if(i % 2 == 0)
+                {
+                    newMessage += words[i] + " ";
+                }
+            }
+            Console.WriteLine(newMessage);
+        }
+
+        static void SubString(string message, int index = 0, int length = 0)
+        {
+            if(index == 0 && length == 0) 
+            {
+                Console.WriteLine(message);
+            } 
+            else if (length == 0)
+            {
+                length = message.Length;
+            } 
+            else if(length != 0 && length >= message.Length)
+            {
+                Console.WriteLine("");
+            }
+            
+            string subString = "";
+
+        
+            for(int i = index; i < length; i++)
+            {
+                subString += message[i];
+            }
+            
+            Console.WriteLine(subString);
+        }
+
+        static void AreArraysEqual(int[] arr1, int[] arr2)
+        {
+            if(arr1.Length != arr2.Length)
+            {
+                Console.WriteLine(false);
+                return;
+            }
+
+            for(int i = 0; i < arr1.Length; i++) 
+            {
+                if (arr1[i] != arr2[i])
+                {
+                    Console.WriteLine(false);
+                    return;
+                }
+            }
+            Console.WriteLine(true);
+        }
+
+        static void OutParameters(int a, int b, out int sum, out int diff, out int prod, out int quot)
+        {
+            sum = a + b;
+            diff = a - b;
+            prod = a * b;
+            quot = a / b;
+        }
+
+        static void ReferenceParams(string message, ref int index)
+        {
+            if(index < 0)
+            {
+                index = 0;
+                Console.WriteLine(message[0]);
+                return;
+            } 
+            else if(index >= message.Length)
+            {
+                index = message.Length - 1;
+                Console.WriteLine(message[message.Length - 1]);
+                return;
+            } 
+            else 
+            {
+                Console.WriteLine(message[index]);
+                return;
+            }
+
+
+
+            
+        }
+
         static void Main(string[] args)
         {
             //Conditionals();
             //Loops();
             //Arrays();
+
+            // Program n = new Program();
+            // string result = n.Function();
+            // Console.WriteLine(result);
+
+            // UpdateIndex(new int[3], 2, 10);
+            // EveryOtherString("to be or not to be");
+            // SubString("Hello World", 0, 12);
+            // AreArraysEqual(new int[] {5,2,3,4, 1}, new int[] {1,2,3,4}); 
+
+            // int sum;
+            // int diff;
+            // int prod;
+            // int quot;
+
+            // OutParameters(5, 10, out sum, out diff, out prod, out quot);
+            // Console.WriteLine($"{sum},{diff},{prod},{quot}");
+
+            int num = 1;
+            ReferenceParams("Hello World", ref num);
+
+
         }
     }
 }
